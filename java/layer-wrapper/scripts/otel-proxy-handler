@@ -1,6 +1,0 @@
-#!/bin/bash
-
-export OTEL_INSTRUMENTATION_AWS_LAMBDA_HANDLER="$_HANDLER"
-export _HANDLER="io.opentelemetry.instrumentation.awslambda.v1_0.TracingRequestApiGatewayWrapper"
-
-exec "$@"
